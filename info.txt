@@ -1,0 +1,6 @@
+first i've to map website,
+then start with basic HTML skeleton 
+after that, use some time for CSS and then 
+split elements into rows and columns
+
+let's see what will happen ...
