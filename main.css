@@ -44,21 +44,48 @@ header {
 
 .nav__links {
     list-style: none;
+    width: 100%;
 }
 
 .nav__links li {
-    display: inline;
+    position: relative;
+    display: inline-block;
     padding: 8px 40px;
 }
 
+
 .nav__links li a {
+    display: block;
     transition: all 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
+    background: #f2f2f2;
     color: #0088a9;
 }
 
+.nav__links li ul{
+    min-width: 100%;
+    display: none;
+    background: #f2f2f2;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+.nav__links li:hover ul{
+    display: block;	/* Display the dropdown */
+}
+
+.nav__links li ul li{
+    display: block;
+}
+
+.nav__links li ul li a:hover {
+    color: orange;
+}
+
+/*      BUTTON
 button {
     margin-top: 10px;
     margin-right: 10px;
@@ -69,9 +96,13 @@ button {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-buton:hover {
+
+button:hover {
     background-color: rgba( 0, 136, 169, 0.8 );
 }
+*/
+
+
 
 .cy{
     display: flex;
@@ -87,6 +118,10 @@ buton:hover {
 
 .cy a{
     margin-right: 28%;
+}
+
+.cy a:hover {
+    color: orange;
 }
 
 .objective{
