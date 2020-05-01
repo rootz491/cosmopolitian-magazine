@@ -1,0 +1,39 @@
+body {
+    padding-left: 11em;
+    background-color: white; 
+}
+h1{
+    color: crimson;
+    font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+    text-align: center;
+}
+ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em 
+}
+p{
+    font-size: 20px;
+    text-align: center;
+}
+ul.navbar li {
+    background: wheat;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border: 1mm solid black ;
+}
+ul.navbar a {
+    text-decoration: none; 
+}
+a:link {
+    color: blue ;
+}
+a:visited {
+    color: purple ; 
+}
+
+ 
