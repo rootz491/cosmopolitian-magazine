@@ -157,3 +157,20 @@ button:hover {
     border: solid black 5px;
     max-width: 800px;
 }
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.MV {
+    text-align: center;
+}
+
+.quote {    
+    text-align: center;
+    display: inline;
+    font-size: 20px;
+    margin-left: 15%;
+    padding: 20px;
+}
+span, q {
+    background-color: #add6e0;
+}
