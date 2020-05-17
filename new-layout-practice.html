@@ -23,37 +23,38 @@
                 position: relative;
                 padding: 0;
                 margin: 0;
-                height: 350px;
-                width: 1600px;
+                height: 400px;
+                width: 100%;
                 display: grid;
                 grid-template-columns: 200px 1fr 200px;
             }
 
             div.upper-main { 
                 height: 100%;
+                width: 100%;
                 background-color: #92D772;
+                border-left: 35px solid #CAE5FE;
+                border-right: 35px solid #CAE5FE;
             }
 
             div.upper-side {
                 height: 100%;
-                background-color: #F19581;
             }
 
             div.top-leave {
-                background-color: #F19581;
+                background-color: #CAE5FE;
                 top: 0px;
                 width: 100%;
                 height: 50px;
             }
 
             div.top-button {
-                background: whitesmoke;
                 width: 100%;
                 height: 40px;
             }
 
-            .top-button  li,  li > a {
-                background: white;
+            .top-button  ul, li,  li > a {
+                background: rgb(172, 172, 172);
                 list-style: none;
                 text-decoration: none;
                 color: black;
@@ -65,38 +66,46 @@
                 padding: 13px 40px;
             }
 
-            div.middle-button {
-                display: grid;
-                grid-template-columns: 200px 1fr 200px;
+
+
+            .top-button-lower {
+                position: absolute;
+                bottom: 0px;
+                width: 70.3%;
+                height: 40px;
             }
 
-            .middle-button-main ul, li, ul > li > a {
+            .top-button-lower  ul, li,  li > a {
                 background: rgb(172, 172, 172);
                 list-style: none;
                 text-decoration: none;
                 color: black;
             }
 
-            .middle-button-main li {
+            .top-button-lower  li {
                 position: relative;
                 display: inline-block;
                 padding: 13px 40px;
             }
-
-            .middle-button-side div {
-                height: 50%;
-            }
             
             .party-logo img {
                 max-width: 100%;
-                height: 60%;
+                height: 40%;
                 background: none;
                 position : absolute;
         	    top: 34%;
 	            left: 70%;
-            	
             }
 
+            .content {
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+            }
+
+            .content-main {
+                background-color: #CAE5FE;
+                height: 1000px;
+            }
 
         </style>
 
@@ -121,15 +130,15 @@
                         <ul>
 
                             <li>
-                                <a style="background: white;"  href="">CONTACT</a>
+                                <a href="">CONTACT</a>
                             </li>
 
                             <li>
-                                <a style="background: white;" href="">BUTTON 1</a>
+                                <a href="">DOCUMET</a>
                             </li>
 
                             <li>
-                                <a style="background: white;"  href="">BUTTON 2</a>
+                                <a href="">BUTTON</a>
                             </li>
 
                         </ul>
@@ -140,58 +149,55 @@
                         <img src="intro/pics/The Cosmopolitan Youth - Logo.png" alt="">
                     </div>
 
+                    <div class="top-button-lower">
+                        
+                        <ul>
+
+                            <li>
+                                <a href="">LIFESTYLE</a>
+                            </li>
+            
+                            <li>
+                                <a href="">TEAM</a>
+                            </li>
+
+                            <li>
+                                <a href="">PROJECTS</a>
+                            </li>
+                            
+                            <li>
+                                <a href="">TIME LINE</a>
+                            </li>
+                            
+                            <li>
+                                <a href="">BUTTON</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+
                 </div>
 
                 <div class="upper-side"></div>
             
             </div>
 
-<!------------------------------------------------------------------ middle button menu --------------------------------------------->
+<!------------------------------------------------------------------ content / body --------------------------------------------->
+            <div class="content">
 
-                <div class="middle-button">
-                   
-                    <div class="middle-button-side">
-                        <div style="background: #F19581;"></div>
-                        <div></div>
-                    </div>
+                <div class="blank-side"></div>
 
-                    <div class="middle-button-main">
+                <div class="content-main">
 
-                        <ul>
 
-                            <li>
-                                <a href="">MORE</a>
-                            </li>
-            
-                            <li>
-                                <a href="">BUTTON</a>
-                            </li>
 
-                            <li>
-                                <a href="">BUTTON 3</a>
-                            </li>
-                            
-                            <li>
-                                <a href="">BUTTON 4</a>
-                            </li>
-                            
-                            <li>
-                                <a href="">BUTTON 5</a>
-                            </li>
-
-                        </ul>
-            
-                    </div>
-
-                    <div class="middle-button-side">
-                        <div style="background: #F19581;"></div>
-                        <div></div>
-                    </div>
-                   
                 </div>
 
-<!------------------------------------------------------------------ content / body --------------------------------------------->
-            
+                <div class="blank-side"></div>
+
+            </div>
             
         </div>      <!---main-container DIV ending-->
 
