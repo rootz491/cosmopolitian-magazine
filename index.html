@@ -1,81 +1,206 @@
 <html>
     <head>
-       <title>WELCOME YOUTH</title> 
-       <link rel="stylesheet" href="index.css">
+        <title>
+            NEW LAYOUT
+        </title>
+
+        <style>
+            
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                background: #ffffff;
+            }
+
+            div.main-container {
+               height: 100%;
+               width: 100%;
+               
+            }
+
+            div.upper-half {
+                position: relative;
+                padding: 0;
+                margin: 0;
+                height: 400px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+            }
+
+            div.upper-main { 
+                height: 100%;
+                width: 100%;
+                background-color: #92D772;
+                border-left: 35px solid #CAE5FE;
+                border-right: 35px solid #CAE5FE;
+            }
+
+            div.upper-side {
+                height: 100%;
+            }
+
+            div.top-leave {
+                background-color: #CAE5FE;
+                top: 0px;
+                width: 100%;
+                height: 50px;
+            }
+
+            div.top-button {
+                width: 100%;
+                height: 40px;
+            }
+
+            .top-button  ul, li,  li > a {
+                background: rgb(172, 172, 172);
+                list-style: none;
+                text-decoration: none;
+                color: black;
+            }
+
+            .top-button  li {
+                position: relative;
+                display: inline-block;
+                padding: 13px 40px;
+            }
+
+
+
+            .top-button-lower {
+                position: absolute;
+                bottom: 0px;
+                width: 70.3%;
+                height: 40px;
+            }
+
+            .top-button-lower  ul, li,  li > a {
+                background: rgb(172, 172, 172);
+                list-style: none;
+                text-decoration: none;
+                color: black;
+            }
+
+            .top-button-lower  li {
+                position: relative;
+                display: inline-block;
+                padding: 13px 40px;
+            }
+            
+            .party-logo img {
+                max-width: 100%;
+                height: 40%;
+                background: none;
+                position : absolute;
+        	    top: 34%;
+	            left: 70%;
+            }
+
+            .content {
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+            }
+
+            .content-main {
+                background-color: #CAE5FE;
+                height: 1000px;
+            }
+
+        </style>
+
     </head>
+
     <body>
-        <header>
-            <img src="intro/pics/The Cosmopolitan Youth - Logo.png" class="logo1" alt="LOGO" >
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="intro/student_desk.html">STUDENT DESK</a></li>
-                    <li><a href="intro/page_1.html" target="__blank" ><b>MAGAZINE</b></a>
-                            <ul class="inner-nav">
-                                <li><a href="chapter1.html">HELLO 1</a></li>
-                                <li><a href="chapter2.html">HELLO 2</a></li>
-                                <li><a href="chapter3.html">HELLO 3</a></li>
-                                <li><a href="chapter4.html">HELLO 4</a></li>
-                                <li><a href="chapter5.html">HELLO 5</a></li>
-                                <li><a href="chapter6.html">HELLO 6</a></li>
-                            </ul>
-                        </li>
-                    <li><a href="a">RESOURCES</a></li>
-                </ul>
-            </nav>
-         <!--   <a href="a" class="cta"><button>contact</button></a>    -->
-            <img src="intro/pics/1200px-Universität_Potsdam_logo.svg.png" class="logo2" alt="LOGO" >
-        </header>
-        <br><br>
-        <h1 class="heading" style="color: orange; font-size: 100px; font-family: Gentona;">The Cosmopolitan Youth</h1>
-        <br>
-        <h2 class="heading">ORGANISING</h2>
-        <br>
-        <h1 style="color: red; font-size: 70px; font-family: Aileron;" class="heading">PEACE TRAIN</h1>
-        <div class="cy">
-            <p> 2020 - 2024 </p>
-            <a href="intro/know-more.pdf" type=”application/pdf” target="blank">Know More</a>
-        </div>
-        <br><br>
-        <div >
-            <p class="objective"><b>OBJECTIVE : </b>To explore the cultural gap between the western and eastern world</p>
-            <br>
-            <p class="content">
 
-                    In the last few centuries, the population exchange between the two worlds led to a mass cultural collision. Some colonized, some vandalized, some
-                    remained in peace whereas some promoted the nuclear state of destruction. In the direction of the future, a motivated student group from University of
-                    Potsdam is willing to organize a cultural meetup between two different world orders. The project aims to connect different kinds of lifestyles around the
-                    world and to look at this diversity from a native perspective to rediscover the values and way of life. In order to initiate the first phase of the project, this
-                    coming spring, the student group is going to visit the Himalayan belt of Asia. Individuals who are interested to support the project can contribute their
-                    precious time or wealth and always welcome to join the group in any phase of the project.
+<!------------------------------------------------------------------ upper half --------------------------------------------->
+        
+        <div class="main-container">
 
-            </p>
-            <br><br><br><br>
-        </div>
-        <div class="img">
-            <img src="intro/pics/img3.png" alt="">
-        </div>
-        <br><br><br>
-        <div class="MV">
-            <h1 style="font-size: 50px;">Mission</h1>
-            <p style="font-size: 30px;">
-                We, the lifeforms of stardust, may shine our intellect beyond the horizon.
-            </p>
-            <br>
-            <h1 style="font-size: 50px;">Vision</h1>
-            <p style="font-size: 30px;">
-                University is our temple. Knowledge is our God.
-            </p>
-        </div>
-        <br><br><br>
-        <div class="extra-pic">
-            <img src="intro/pics/img2.png" alt="img2">
-        </div>
-        <br><br><br><br>
-        <span class="quote">
-            <q  style="font-family: italic;">In an infinite Universe, there must be other life. There is no bigger question. 
-                It is time to commit to finding the answer.</q> - Hawking
-        </span>
-        <br><br><br><br><br><br>
+            <div class="upper-half">
+
+                <div class="upper-side"></div>
+
+                <div class="upper-main">
+
+                    <div class="top-leave"></div>
+
+                    <div class="top-button">
+                        
+                        <ul>
+
+                            <li>
+                                <a href="">CONTACT</a>
+                            </li>
+
+                            <li>
+                                <a href="">DOCUMET</a>
+                            </li>
+
+                            <li>
+                                <a href="">BUTTON</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="party-logo">
+                        <img src="intro/pics/The Cosmopolitan Youth - Logo.png" alt="">
+                    </div>
+
+                    <div class="top-button-lower">
+                        
+                        <ul>
+
+                            <li>
+                                <a href="">LIFESTYLE</a>
+                            </li>
+            
+                            <li>
+                                <a href="">TEAM</a>
+                            </li>
+
+                            <li>
+                                <a href="">PROJECTS</a>
+                            </li>
+                            
+                            <li>
+                                <a href="">TIME LINE</a>
+                            </li>
+                            
+                            <li>
+                                <a href="">BUTTON</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="upper-side"></div>
+            
+            </div>
+
+<!------------------------------------------------------------------ content / body --------------------------------------------->
+            <div class="content">
+
+                <div class="blank-side"></div>
+
+                <div class="content-main">
+
+
+
+                </div>
+
+                <div class="blank-side"></div>
+
+            </div>
+            
+        </div>      <!---main-container DIV ending-->
+
     </body>
-</html>
 
+</html>
