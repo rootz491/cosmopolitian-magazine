@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            NEW LAYOUT
+            THC youth
         </title>
 
         <style>
@@ -32,6 +32,7 @@
             div.upper-main { 
                 height: 100%;
                 width: 100%;
+                position: relative;
                 background-color: #92D772;
                 border-left: 35px solid #CAE5FE;
                 border-right: 35px solid #CAE5FE;
@@ -49,52 +50,70 @@
             }
 
             div.top-button {
-                width: 100%;
-                height: 40px;
+                position: absolute;
+                width: 100%;                
+                background: rgb(172, 172, 172);
+                height: 47px;
+                font-size: 20px;
+                font-weight: bold;
             }
 
-            .top-button  ul, li,  li > a {
+            .top-button > ul {
+                position: absolute;
+                right: 0px;
+            }
+
+            .top-button >  ul, .top-button > ul > li, .top-button > ul > li > a {
                 background: rgb(172, 172, 172);
                 list-style: none;
                 text-decoration: none;
                 color: black;
             }
 
-            .top-button  li {
-                position: relative;
+            .top-button > ul > li {
                 display: inline-block;
                 padding: 13px 40px;
             }
 
-
+            .heading > h1 {
+                position: absolute;
+                background: #92D772;
+                color: orange;
+                font-size: 64px;
+                font-family: fantasy;
+                top: 50%;
+	            left: 40%;
+	            transform: translate( -50%, -50% );
+            }
 
             .top-button-lower {
                 position: absolute;
                 bottom: 0px;
-                width: 70.3%;
-                height: 40px;
+                width: 100%;
+                height: 47px;
+                font-weight: bold;
+                font-size: 20px;
             }
 
-            .top-button-lower  ul, li,  li > a {
+            .top-button-lower > ul, .top-button-lower > ul > li, .top-button-lower > ul > li > a {
                 background: rgb(172, 172, 172);
                 list-style: none;
                 text-decoration: none;
                 color: black;
             }
 
-            .top-button-lower  li {
-                position: relative;
+            .top-button-lower  > ul > li {
                 display: inline-block;
-                padding: 13px 40px;
+                padding: 13px 20px;
             }
             
-            .party-logo img {
+            .party-logo > img {
                 max-width: 100%;
                 height: 40%;
                 background: none;
                 position : absolute;
-        	    top: 34%;
-	            left: 70%;
+        	    top: 35%;
+	            left: 83%;
             }
 
             .content {
@@ -104,7 +123,122 @@
 
             .content-main {
                 background-color: #CAE5FE;
-                height: 1000px;
+                height: 2000px;
+            }
+
+            div.material {
+                text-align: justify;
+                background-color: #CAE5FE;
+                margin: 100px 40px;
+            }
+
+            .material > p {
+                background-color: #CAE5FE;
+                font-size: 30px;
+                margin: 15px 80px  0px 80px;
+            }
+
+            .material > h1 {
+                background-color: #CAE5FE;
+                font-size: 45px;
+                margin: 70px 80px 0px 80px;
+            }
+
+            .project {
+                margin-top: 100px;
+                background-color: #CAE5FE;
+            }
+
+            .project > h1 {
+                background-color: #CAE5FE;
+                font-size: 80px;
+                color: orange;
+                font-family: cursive;
+                text-align: center;
+                margin: 50px;
+            }
+
+            .project > ul, .project > ul > li {
+                background: #CAE5FE;
+                font-size: 34px;
+                list-style: none;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+
+            .project > ul > li {
+                background: #CAE5FE;
+                padding-bottom: 40px;
+            }
+
+            .subscribe {
+                position: absolute;
+                background: rgb(172, 172, 172);
+                top: 50%;
+	            left: 90%;
+	            transform: translate( -50%, -50% );
+                
+                
+            }
+
+            .subscribe > a {
+                background: rgb(172, 172, 172);
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            .subscribe > a > button {
+                display: inline;
+                padding: 9px 25px;
+                background-color: rgba( 0, 136, 169, 1 );
+                border: none;
+                color: red;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .subscribe > a > button:hover {
+                color: orange;
+                background-color: rgba(6, 173, 214, 0.8);
+            }
+
+            .thanking {
+                text-align: center;
+                height: auto;
+                font-size: 34px;
+                margin-top: 80px;
+                background: #CAE5FE;
+            }
+
+            .thanking > p , .thanking > div {
+                background: #CAE5FE;                
+            }
+
+            .thanking .sub > a {
+                background: #CAE5FE; 
+            }
+
+            .sub > a > button {
+                
+                text-decoration: none;
+                padding: 9px 25px;
+                background-color: rgba( 0, 136, 169, 1 );
+                border: none;
+                color: red;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .sub > a > button:hover {
+                color: orange;
+                background-color: rgba(6, 173, 214, 0.8);
             }
 
         </style>
@@ -134,7 +268,7 @@
                             </li>
 
                             <li>
-                                <a href="">DOCUMET</a>
+                                <a href="">DOCUMENT</a>
                             </li>
 
                             <li>
@@ -143,6 +277,10 @@
 
                         </ul>
 
+                    </div>
+
+                    <div class="heading">
+                        <h1> The cosmopolitan youth  </h1>
                     </div>
 
                     <div class="party-logo">
@@ -173,8 +311,11 @@
                                 <a href="">BUTTON</a>
                             </li>
 
-
                         </ul>
+
+                        <div class="subscribe">
+                            <a href="https://lists.astaup.de/listinfo/thcyouth" ><button>SUBSCRIBE</button></a>
+                        </div>
 
                     </div>
 
@@ -191,9 +332,78 @@
 
                 <div class="content-main">
 
+                    <div class="material">
+                        <h1>
+                            Who are We? Where are We? Why are We?
+                        </h1>
 
+                        <p>
+                            We’re, The Cosmopolitan Youth, the leading international political party at the Universität POTSDAM, with members from 17 nations. Our vision is to merge and make a global voice of youth, with a primary goal to form a globalized education system for the next generation. 
+                        </p>
+                    
+                        <h1>
+                                What’s NEXT?
+                        </h1>
 
-                </div>
+                        <p>
+                                At present time, world politics is in transition period as for Brexit, Russian government resignation, Brazil Forest, Chinese Trade, Venezuela Inflation, USA-Iran Conflict and so on. Over all of these, global pendemic COVID19. Profiles who were developing in the post cold-war era are the governing body today, still the world is struggling for primitive issues like food, shelter and tomorrow. 
+                        </p>
+
+                        <h1>
+                                What’s TOMORROW?
+                        </h1>
+
+                        <p>
+                                Our generation born with internet, international flights, globalization,.. which really made a huge gap in our ideology and the prior generation ideology. For example compare your grand-father's sense of world with yours. Then compare pre-millinuim and the post world (just last 20 years) communication platforms (telegram, 2G, 3G, 4G, 5G). Today we’re looking towards post-Corona world, all together, globally via internet. Clueless Tomorrow!.
+                        </p>
+
+                        <h1>
+                                What’s the Idea?
+                        </h1>
+
+                        <p>
+                                The new ideas like global order, integration theory, can be very fruitful in re-shaping the near future. We feel very thankful to modern educational organisation like Lomonosov Moscow State University for taking intiatives to guide our generation in the direction of global socities to sustain deverse Humanity and the planet Earth. 
+                        </p>
+
+                        <h1>
+                                Are you MOTIVATED?
+                        </h1>
+
+                        <p>
+                                We're looking for candidates, in other universities too, who can assist us to form a political organisation with the same designation in their respective university student council, world-wide. 
+                        </p>
+
+                        
+
+                    </div>
+
+                    <div class="thanking">
+                        <p>
+                            Subscribe us for getting regular updates <br>
+                            <br>
+                            <div class="sub">
+                                <a href="https://lists.astaup.de/listinfo/thcyouth" ><button>SUBSCRIBE</button></a>
+                            </div>
+                            <br>
+                           We’re very thankful for your every effort to save our home planet. <br>
+                        </p>
+                    </div>
+                    
+                    <div class="project">
+                       
+                        <h1>
+                            PROJECTS
+                        </h1>
+                        <ul>
+                           <li> Peace Train ( 2020 - 2024 ) </li>
+                           <li> Youth Magazine (2, yearly)  </li>
+                           <li> Kitchen  </li>
+                           <li> Bilingual Certificate </li>
+                        </ul>
+                    
+                    </div>
+
+                </div>      <!--main-content ends here-->
 
                 <div class="blank-side"></div>
 
