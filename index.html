@@ -64,23 +64,26 @@
             }
 
             .top-button >  ul, .top-button > ul > li, .top-button > ul > li > a {
+                
                 background: #97C387;
                 list-style: none;
                 text-decoration: none;
                 color: black;
             }
 
+            .top-button > ul > li > a  {
+                padding: 12px 20px;
+            }
+            
             .top-button > ul > li {
                 display: inline-block;
-                padding: 13px 40px;
+                padding: 13px 10px;
             }
 
             .top-button  > ul > li > a:hover  {
                 background-color: #7DB56A;
-                font-weight: bold;
-                padding: 12px 20px;
                 text-align: center;
-                color: black;
+                color: white;
             }
 
             .top-button-lower {
@@ -100,16 +103,56 @@
 
             .top-button-lower  > ul > li {
                 display: inline-block;
-                padding: 13px 20px;
+                padding: 13px 5px;
             }
 
-            .top-button-lower  > ul > li > a:hover {
+            .top-button-lower > ul > li > a  {
+                padding: 12px 20px;
+            }
+
+            .top-button-lower > ul > li > a:hover {
+                background-color: #7DB56A;
+                text-align : center;
+                color: white;
+            }
+
+            /* ---------------------------- lower button dropdown ----------------------------- */
+
+            .top-button-lower > ul > li > ul {
+                position: absolute;
+                z-index: 999;
+                display: none;
+                background: none;
+                min-width: 100%;
+            } 
+
+            .top-button-lower ul > li:hover > ul {
+                display: block;	/* Display the dropdown */
+            }
+
+            .top-button-lower > ul > li > ul > li {
+                background: none;
+                display: block;
+                margin: 20px 0px;              
+                text-align: left;
+                font-size: 24px;
+            }
+
+            .top-button-lower > ul > li > ul > li > a {
+                list-style: none;
+                text-decoration: none;
+                color: black;
+                background: none;
+                padding: 10px 20px;
+            } 
+
+            .top-button-lower > ul > li > ul > li > a:hover {
+                color: white;
                 background-color: #7DB56A;
                 font-weight: bold;
-                padding : 12px 20px;
-                text-align : center;
-                color: black;
             }
+
+            /* ---------------------------------------------------------------------------------- */
             
             .party-logo > img {
                 max-width: 100%;
@@ -129,6 +172,9 @@
                 background-color: #E9F1D9;
                 height: auto;
             }
+
+
+            /* -------------------------- content styling from here ------------------------------ */
 
             div.material {
                 text-align: justify;
@@ -336,10 +382,21 @@
             
                             <li>
                                 <a href="">TEAM</a>
+                                <ul>
+                                    <li><a href="">AstA</a></li>
+                                    <li><a href="">StuPa</a></li>
+                                    <li><a href="">FZS</a></li>
+                                </ul>
                             </li>
 
                             <li>
                                 <a href="">PROJECTS</a>
+                                <ul>
+                                    <li> <a href="">Peace Train</a></li>
+                                    <li> <a href="">Youth Magazine</a> </li>
+                                    <li> <a href="">Kitchen </a> </li>
+                                    <li> <a href="">Bilingual Certificate </a> </li>
+                                 </ul>
                             </li>
                             
                             <li>
@@ -447,12 +504,6 @@
                         <h1>
                             PROJECTS
                         </h1>
-                        <ul>
-                           <li> Peace Train ( 2020 - 2024 ) </li>
-                           <li> Youth Magazine (2, yearly)  </li>
-                           <li> Kitchen  </li>
-                           <li> Bilingual Certificate </li>
-                        </ul>
                     
                     </div>
 
