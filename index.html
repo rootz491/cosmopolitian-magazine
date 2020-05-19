@@ -47,7 +47,7 @@
                 background-color: #E9F1D9;
                 top: 0px;
                 width: 100%;
-                height: 35px;
+                height: 20px;
             }
 
             div.top-button {
@@ -75,9 +75,12 @@
                 padding: 13px 40px;
             }
 
-            .top-button  > ul > li:hover , .top-button  > ul > li > a:hover  {
+            .top-button  > ul > li > a:hover  {
                 background-color: #7DB56A;
                 font-weight: bold;
+                padding: 12px 20px;
+                text-align: center;
+                color: black;
             }
 
             .top-button-lower {
@@ -85,7 +88,6 @@
                 bottom: 0px;
                 width: 100%;
                 height: 47px;
-                
                 font-size: 20px;
             }
 
@@ -101,9 +103,12 @@
                 padding: 13px 20px;
             }
 
-            .top-button-lower  > ul > li:hover , .top-button-lower  > ul > li > a:hover {
+            .top-button-lower  > ul > li > a:hover {
                 background-color: #7DB56A;
                 font-weight: bold;
+                padding : 12px 20px;
+                text-align : center;
+                color: black;
             }
             
             .party-logo > img {
@@ -122,13 +127,14 @@
 
             .content-main {
                 background-color: #E9F1D9;
-                height: 2000px;
+                height: auto;
             }
 
             div.material {
                 text-align: justify;
                 background-color: #E9F1D9;
                 margin: 100px 40px;
+                height: auto;
             }
 
             .material > p {
@@ -144,7 +150,6 @@
             }
 
             .project {
-                padding-top: 100px;
                 background-color: #E9F1D9;
             }
 
@@ -209,7 +214,7 @@
                 text-align: center;
                 height: auto;
                 font-size: 34px;
-                padding-top: 80px;
+                padding-top: 50px;
                 background: #E9F1D9;
             }
 
@@ -253,6 +258,30 @@
                 padding: 20px;
                 font-size: 30px;
                 background-color: #A4D878;
+            }
+
+            .img-long {
+                display: grid;
+                grid-template-columns: 100px 1fr 100px;
+                background: #E9F1D9;
+                margin-top: 100px;
+            }
+
+            .img-long > img {
+                grid-area: 1/2;
+                max-width: 100% ;
+            }
+
+            .img-statue {
+                display: grid;
+                grid-template-columns: 100px 1fr 100px;
+                background: #E9F1D9;
+                margin-top: 100px;
+            }
+
+            .img-statue > img {
+                grid-area: 1/2;
+                max-width: 100% ;
             }
 
         </style>
@@ -344,6 +373,10 @@
 
                     <div class="empty"></div>
 
+                    <div class="img-long">
+                        <img src="intro/pics/long.jpg" alt="">
+                    </div>
+
                     <div class="material">
                         <h1>
                             Who are We? Where are We? Why are We?
@@ -392,6 +425,11 @@
                     <div class="quote">
                         <span>In time, intellect lives. Their knowledge forms God, and schools are the temple for them.</span>
                     </div>
+
+                    <div class="img-statue">
+                        <img src="intro/pics/statue.jpg" alt="statue/img">
+                    </div>
+
                     <div class="thanking">
                         <p>
                             Subscribe us for getting regular updates <br>
