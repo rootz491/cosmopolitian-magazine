@@ -1,0 +1,326 @@
+<html>
+
+    <head>
+        
+        <title>
+            new design
+        </title>
+
+        <style>
+            
+            * {
+                
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .container {
+                position: relative;
+            }
+
+            .bg-img {
+                position: fixed;
+                top: 0px;
+                z-index: -1;
+                
+                max-width: 100%;
+            }
+
+             /* 
+
+            .top {
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+            }
+
+            .top-side {
+                width: 200px;
+                height: 250px;
+            }
+
+            .top-content {
+                position: relative;
+                background-image: url("intro/pics/76e4ea6a-f4ab-4596-b2f7-96f6bb4d2b45.jpeg");
+            }
+
+                                top navigation bar
+
+            div.top-nav {  
+                width: 100%;
+                height: 30px;
+                background-color: #E9F1D9;
+            }
+
+            .top-nav > ul {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                background-color: #E9F1D9;
+            }
+
+            .top-nav > ul > li {
+                color: black;
+                display: inline;
+                padding: 13px 5px;
+            }
+
+            .top-nav > ul > li > a {
+                padding: 12px 20px;
+                font-size: 24px;
+                color: black;
+                text-decoration: none;
+                list-style: none;
+            }
+
+           ----------------------------------  lower side and padding ------------------------- */
+
+            .lower {
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+            }
+
+            .lower-side {
+                height:100px;
+                background: none
+            }
+
+            .lower-padding-div {
+                background: none;
+                height:600px;
+                
+            }
+
+            /*
+                ------------------------------- lower nav -------------------------------
+            */
+
+            div.lower-nav {
+                position: sticky;
+                top: 0px;
+                width: 100%;
+                height: 47px;
+                background: #e9f1d9;
+            }
+
+            .lower-nav > ul {
+                position: absolute;
+                bottom: 0px;
+            }
+
+            .lower-nav > ul, .lower-nav > ul > li, .lower-nav > ul > li > a {
+                background: #e9f1d9;
+                list-style: none;
+                text-decoration: none;
+                color: black;
+            }
+
+            .lower-nav  > ul > li {
+                display: inline-block;
+                padding: 13px 5px;
+            }
+
+            .lower-nav > ul > li > a  {
+                padding: 12px 20px;
+            }
+
+            .lower-nav > ul > li > a:hover {
+                background-color: #7DB56A;
+                text-align : center;
+                color: white;
+            }
+
+            /* ---------------------------- lower nav dropdown ----------------------------- */
+
+            .lower-nav > ul > li > ul {
+                position: absolute;
+                z-index: 999;
+                display: none;
+                background: none;
+                max-width: 100%;
+            } 
+
+            .lower-nav ul > li:hover > ul {
+                display: block;	/* Display the dropdown */
+            }
+
+            .lower-nav > ul > li > ul > li {
+                background: none;
+                display: block;
+                margin: 20px 0px;              
+                font-size: 24px;
+            }
+
+            .lower-nav > ul > li > ul > li > a {
+                list-style: none;
+                text-decoration: none;
+                color: black;
+                background: none;
+                padding: 10px 20px;
+            } 
+
+            .lower-nav > ul > li > ul > li > a:hover {
+                color: white;
+                background-color: #7DB56A;
+                font-weight: bold;
+            }
+
+            /* ------------------------------------------------------------------------------- */
+
+            .main-content {
+                height: 1000px;
+                background-color: #E9F1D9;
+                
+            }
+
+            /* scrolling section
+
+            .para {
+                margin: 200px 25px 0 25px;
+                background-color: chocolate;
+                height: 200px;
+                width: auto;
+                overflow-y: scroll;
+                scroll-behavior: smooth;
+            }
+
+            .para > nav {
+                position: sticky;
+                top: 0px;
+                padding: 1em 0;
+                background: black;
+            }
+
+            .para > nav > a {
+                padding: 1em 1em;
+                color: white;
+                background: black;
+                text-decoration: none;
+            }
+
+            .para > nav > a:hover {
+                background: white;
+                color: black;
+            }
+
+            .para > section {
+                text-align: center;
+                height: 200px;
+            }
+
+            */
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div class="container">
+
+            <img class="bg-img" src="intro/pics/long.jpg" alt="img">
+            <!--
+            <div class="top">
+            
+                <div class="top-side"></div>
+            
+                <div class="top-content">
+                
+                     <div class="top-nav">
+                        <ul>
+                        
+                            <li><a href="">contact</a></li>
+                            <li><a href="">document</a></li>
+
+                        </ul>
+                     </div>
+                
+
+                </div>
+
+                <div class="top-side"></div>
+
+            </div>
+
+        -->
+
+            <div class="lower">
+
+                <div class="lower-side"></div>
+
+                 <div class="lower-nav">
+                     <ul>
+
+                         <li>
+                             <a href="">LIFESTYLE</a>
+                         </li>
+                        
+                         <li>
+                             <a href="">TEAM</a>
+                             <ul>
+                                 <li><a href="">AstA</a></li>
+                                 <li><a href="">StuPa</a></li>
+                                 <li><a href="">FZS</a></li>
+                             </ul>
+                         </li>
+
+                         <li>
+                             <a href="">PROJECTS</a>
+                             <ul>
+                                 <li> <a href="">Peace Train</a></li>
+                                 <li> <a href="">Youth Magazine</a> </li>
+                                 <li> <a href="">Kitchen </a> </li>
+                                 <li> <a href="">Bilingual Certificate </a> </li>
+                             </ul>
+                         </li>
+                                        
+                        <li>
+                             <a href="">TIME LINE</a>
+                        </li>
+                                        
+                        <li>
+                             <a href="">BUTTON</a>
+                        </li>
+
+                    </ul>
+                 </div>
+
+                <div class="lower-side"></div>
+
+                        <!------------------ side menu end ------------------>
+
+                 <div class="lower-padding-div"></div>
+                 <div class="lower-padding-div">
+                        <!-- extra space b/w lower nav and rest of the content -->  
+                 </div>
+                 <div class="lower-padding-div"></div>
+
+                <div class="main-content"></div>
+                <div class="main-content">
+                
+                    <!--practice for scrolling sections and navigation to them
+                    <div class="para">
+                        <nav>
+                            <a href="#1">section 1</a>
+                            <a href="#2">section 2</a>
+                        </nav>
+                        <section id="1">
+                            leman amen demon
+                        </section>
+                    
+                        <section id="2">
+                            waba laba dubdub
+                        </section>
+                    </div>
+                    -->
+
+                </div>
+                <div class="main-content"></div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

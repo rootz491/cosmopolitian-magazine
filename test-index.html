@@ -1,0 +1,520 @@
+<html>
+    <head>
+        <title>
+            THC youth
+        </title>
+
+        <style>
+            
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                background: #ffffff;
+            }
+
+            div.main-container {
+               height: 100%;
+               width: 100%;
+               
+            }
+
+            div.upper-half {
+                position: fixed;
+                top:0px;
+                padding: 0;
+                margin: 0;
+                height: 340px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+            }
+
+            div.upper-main { 
+                height: 100%;
+                width: 100%;
+                position: relative;
+                background: url("/intro/pics/cover.jpeg");
+                border-left: 35px solid #E9F1D9;
+                border-right: 35px solid #E9F1D9;
+            }
+
+            div.upper-side {
+                height: 100%;
+            }
+
+            div.top-leave {
+                background-color: #E9F1D9;
+                top: 0px;
+                width: 100%;
+                height: 20px;
+            }
+
+            div.top-button {
+                position: absolute;
+                width: 100%;                
+                background: #97C387;
+                height: 47px;
+                font-size: 20px;
+            }
+
+            .top-button > ul {
+                position: absolute;
+                right: 0px;
+            }
+
+            .top-button >  ul, .top-button > ul > li, .top-button > ul > li > a {
+                
+                background: #97C387;
+                list-style: none;
+                text-decoration: none;
+                color: black;
+            }
+
+            .top-button > ul > li > a  {
+                padding: 12px 20px;
+            }
+            
+            .top-button > ul > li {
+                display: inline-block;
+                padding: 13px 10px;
+            }
+
+            .top-button  > ul > li > a:hover  {
+                background-color: #7DB56A;
+                text-align: center;
+                color: white;
+            }
+
+            .top-button-lower {
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                height: 47px;
+                font-size: 20px;
+            }
+
+            .top-button-lower > ul, .top-button-lower > ul > li, .top-button-lower > ul > li > a {
+                background: #97C387;
+                list-style: none;
+                text-decoration: none;
+                color: black;
+            }
+
+            .top-button-lower  > ul > li {
+                display: inline-block;
+                padding: 13px 5px;
+            }
+
+            .top-button-lower > ul > li > a  {
+                padding: 12px 20px;
+            }
+
+            .top-button-lower > ul > li > a:hover {
+                background-color: #7DB56A;
+                text-align : center;
+                color: white;
+            }
+
+            /* ---------------------------- lower button dropdown ----------------------------- */
+
+            .top-button-lower > ul > li > ul {
+                position: absolute;
+                z-index: 999;
+                display: none;
+                background: none;
+                min-width: 100%;
+            } 
+
+            .top-button-lower ul > li:hover > ul {
+                display: block;	/* Display the dropdown */
+            }
+
+            .top-button-lower > ul > li > ul > li {
+                background: none;
+                display: block;
+                margin: 20px 0px;              
+                text-align: left;
+                font-size: 24px;
+            }
+
+            .top-button-lower > ul > li > ul > li > a {
+                list-style: none;
+                text-decoration: none;
+                color: black;
+                background: none;
+                padding: 10px 20px;
+            } 
+
+            .top-button-lower > ul > li > ul > li > a:hover {
+                color: white;
+                background-color: #7DB56A;
+                font-weight: bold;
+            }
+
+            /* ---------------------------------------------------------------------------------- */
+            
+            .party-logo > img {
+                max-width: 100%;
+                height: 40%;
+                background: none;
+                position : absolute;
+        	    top: 35%;
+	            left: 83%;
+            }
+
+            .content {
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+            }
+
+            .content-main {
+                background-color: #E9F1D9;
+                height: auto;
+            }
+
+
+            /* -------------------------- content styling from here ------------------------------ */
+
+            div.material {
+                text-align: justify;
+                background-color: #E9F1D9;
+                margin: 100px 40px;
+                height: auto;
+            }
+
+            .material > p {
+                background-color: #E9F1D9;
+                font-size: 30px;
+                margin: 15px 80px  0px 80px;
+            }
+
+            .material > h1 {
+                background-color: #E9F1D9;
+                font-size: 45px;
+                margin: 70px 80px 0px 80px;
+            }
+
+            .project {
+                background-color: #E9F1D9;
+            }
+
+            .project > h1 {
+                background-color: #E9F1D9;
+                font-size: 80px;
+                color: orange;
+                font-family: cursive;
+                text-align: center;
+                margin: 50px;
+            }
+
+            .project > ul, .project > ul > li {
+                background: #E9F1D9;
+                font-size: 34px;
+                list-style: none;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+            
+            .project > ul > li {
+                background: #E9F1D9;
+                padding-bottom: 40px;
+            }
+
+            .subscribe {
+                position: absolute;
+                background: #97C387;
+                top: 50%;
+	            left: 90%;
+	            transform: translate( -50%, -50% );
+                
+                
+            }
+
+            .subscribe > a {
+                background: #97C387;
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            .subscribe > a > button {
+                display: inline;
+                padding: 9px 25px;
+                background-color: rgba( 0, 136, 169, 1 );
+                border: none;
+                color: red;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .subscribe > a > button:hover {
+                color: orange;
+                background-color: rgba(6, 173, 214, 0.8);
+            }
+
+            .thanking {
+                text-align: center;
+                height: auto;
+                font-size: 34px;
+                padding-top: 50px;
+                background: #E9F1D9;
+            }
+
+            .thanking > p , .thanking > div {
+                background: #E9F1D9;                
+            }
+
+            .thanking .sub > a {
+                background: #E9F1D9; 
+            }
+
+            .sub > a > button {
+                
+                text-decoration: none;
+                padding: 9px 25px;
+                background-color: rgba( 0, 136, 169, 1 );
+                border: none;
+                color: red;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .sub > a > button:hover {
+                color: orange;
+                background-color: rgba(6, 173, 214, 0.8);
+            }
+
+            .empty {
+                height: 340px;
+            }
+
+            .quote {
+                background: #E9F1D9;
+                margin-top: 60px;
+                text-align: center;
+            }
+            .quote > span {
+                padding: 20px;
+                font-size: 30px;
+                background-color: #A4D878;
+            }
+
+            .img-long {
+                display: grid;
+                grid-template-columns: 100px 1fr 100px;
+                background: #E9F1D9;
+                margin-top: 100px;
+            }
+
+            .img-long > img {
+                grid-area: 1/2;
+                max-width: 100% ;
+            }
+
+            .img-statue {
+                display: grid;
+                grid-template-columns: 100px 1fr 100px;
+                background: #E9F1D9;
+                margin-top: 100px;
+            }
+
+            .img-statue > img {
+                grid-area: 1/2;
+                max-width: 100% ;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+<!------------------------------------------------------------------ upper half --------------------------------------------->
+        
+        <div class="main-container">
+
+            <div class="upper-half">
+
+                <div class="upper-side"></div>
+
+                <div class="upper-main">
+
+                    <div class="top-leave"></div>
+
+                    <div class="top-button">
+                        
+                        <ul>
+
+                            <li>
+                                <a href="/MAGAZINE/intro/error_404.html">CONTACT</a>
+                            </li>
+
+                            <li>
+                                <a href="/MAGAZINE/intro/error_404.html">DOCUMENT</a>
+                            </li>
+
+                            <li>
+                                <a href="/MAGAZINE/intro/error_404.html">BUTTON</a>
+                            </li>
+
+                        </ul>
+
+                    </div>                    
+
+                    <div class="party-logo">
+                        <img src="intro/pics/The Cosmopolitan Youth - Logo.png" alt="">
+                    </div>
+
+                    <div class="top-button-lower">
+                        
+                        <ul>
+
+                            <li>
+                                <a href="/MAGAZINE/intro/error_404.html">LIFESTYLE</a>
+                            </li>
+            
+                            <li>
+                                <a href="/MAGAZINE/intro/error_404.html">TEAM</a>
+                                <ul>
+                                    <li><a href="/MAGAZINE/intro/error_404.html">AstA</a></li>
+                                    <li><a href="/MAGAZINE/intro/error_404.html">StuPa</a></li>
+                                    <li><a href="/MAGAZINE/intro/error_404.html">FZS</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="/MAGAZINE/intro/error_404.html">PROJECTS</a>
+                                <ul>
+                                    <li> <a href="/MAGAZINE/intro/error_404.html">Peace Train</a></li>
+                                    <li> <a href="/MAGAZINE/intro/error_404.html">Youth Magazine</a> </li>
+                                    <li> <a href="/MAGAZINE/intro/error_404.html">Kitchen </a> </li>
+                                    <li> <a href="/MAGAZINE/intro/error_404.html">Bilingual Certificate </a> </li>
+                                 </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="/MAGAZINE/intro/error_404.html">TIME LINE</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/MAGAZINE/intro/error_404.html">BUTTON</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="subscribe">
+                            <a href="https://lists.astaup.de/listinfo/thcyouth" ><button>SUBSCRIBE</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="upper-side"></div>
+            
+            </div>
+
+<!------------------------------------------------------------------ content / body --------------------------------------------->
+            <div class="content">
+
+                <div class="blank-side"></div>
+
+                <div class="content-main">
+
+                    <div class="empty"></div>
+
+                    <div class="img-long">
+                        <img src="intro/pics/long.jpg" alt="">
+                    </div>
+
+                    <div class="material">
+                        <h1>
+                            Who are We? Where are We? Why are We?
+                        </h1>
+
+                        <p>
+                            We’re, The Cosmopolitan Youth, the leading international political party at the Universität POTSDAM, with members from 17 nations. Our vision is to merge and make a global voice of youth, with a primary goal to form a globalized education system for the next generation. 
+                        </p>
+                    
+                        <h1>
+                                What’s NEXT?
+                        </h1>
+
+                        <p>
+                                At present time, world politics is in transition period as for Brexit, Russian government resignation, Brazil Forest, Chinese Trade, Venezuela Inflation, USA-Iran Conflict and so on. Over all of these, global pendemic COVID19. Profiles who were developing in the post cold-war era are the governing body today, still the world is struggling for primitive issues like food, shelter and tomorrow. 
+                        </p>
+
+                        <h1>
+                                What’s TOMORROW?
+                        </h1>
+
+                        <p>
+                                Our generation born with internet, international flights, globalization,.. which really made a huge gap in our ideology and the prior generation ideology. For example compare your grand-father's sense of world with yours. Then compare pre-millinuim and the post world (just last 20 years) communication platforms (telegram, 2G, 3G, 4G, 5G). Today we’re looking towards post-Corona world, all together, globally via internet. Clueless Tomorrow!.
+                        </p>
+
+                        <h1>
+                                What’s the Idea?
+                        </h1>
+
+                        <p>
+                                The new ideas like global order, integration theory, can be very fruitful in re-shaping the near future. We feel very thankful to modern educational organisation like Lomonosov Moscow State University for taking intiatives to guide our generation in the direction of global socities to sustain deverse Humanity and the planet Earth. 
+                        </p>
+
+                        <h1>
+                                Are you MOTIVATED?
+                        </h1>
+
+                        <p>
+                                We're looking for candidates, in other universities too, who can assist us to form a political organisation with the same designation in their respective university student council, world-wide. 
+                        </p>
+
+                        
+
+                    </div>
+
+                    <div class="quote">
+                        <span>In time, intellect lives. Their knowledge forms God, and schools are the temple for them.</span>
+                    </div>
+
+                    <div class="img-statue">
+                        <img src="intro/pics/statue.jpg" alt="statue/img">
+                    </div>
+
+                    <div class="thanking">
+                        <p>
+                            Subscribe us for getting regular updates <br>
+                            <br>
+                            <div class="sub">
+                                <a href="https://lists.astaup.de/listinfo/thcyouth" ><button>SUBSCRIBE</button></a>
+                            </div>
+                            <br>
+                           We’re very thankful for your every effort to save our home planet. <br>
+                        </p>
+                    </div>
+                    
+                    <div class="project">
+                       
+                        <h1>
+                            PROJECTS
+                        </h1>
+                    
+                    </div>
+
+                </div>      <!--main-content ends here-->
+
+                <div class="blank-side"></div>
+
+            </div>
+            
+        </div>      <!---main-container DIV ending-->
+
+    </body>
+
+</html>

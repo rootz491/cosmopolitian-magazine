@@ -1,0 +1,226 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("/MAGAZINE/intro/pics/dharkot-view.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.wrapper {
+    width: 1200px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255,0.6);
+    
+}
+
+/*   header starts here    */
+
+#nav-wrapper {
+    position: sticky;
+    top: 0;
+    padding: 1em 0 1em 2em;
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: space-between;
+   /* background-image: linear-gradient(to right top, #ffffff, #f6f6fd, #eaeefb, #dde6fa, #cddff8, #c1d9f6, #b4d3f3, #a6cef0, #9bc7ed, #90c1ea, #85bae8, #79b4e5);
+   */
+   background-color: #ffffff; 
+}
+
+.nav {
+    margin: auto 0px;
+}
+
+.nav ul {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.nav > ul > li > a {
+    padding: 1em;
+}
+
+
+.nav > ul > li {
+    margin: 0 0.5em;
+}
+
+.nav a {
+    padding: 1em;
+    font-size: 1em;
+}
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-top: 0;
+    margin-left: -2px;
+    min-width: 150px;
+    margin-top: 1em;
+}
+
+.nav ul ul > li {
+    padding: 1em 0;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.nav > ul > li:hover > a {
+    color: rgb(240, 102, 23);
+}
+
+.nav ul li:hover ul {
+    display: block;
+}
+
+.nav ul ul li:hover {
+    background-color: #ffffff;
+}
+
+.nav ul ul li:hover a {
+    color: #000011;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+img#logo {
+    float: left;
+    width: 4em;
+}
+
+.logo-wrapper h1 {
+    margin-left: 1em;
+    color: orange;
+    font-size: 2em;
+}
+
+/*   section starts here   */
+
+section {
+    padding-top: 7em;
+    min-height: 100vh;
+}
+
+.intro-heading {
+    text-align: left;
+    font-size: 1.7em;
+    margin: 0 0 1em 2em;
+}
+
+.intro-description {
+    margin: 1em 6em 2em 4em;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+#intro-images {
+    margin: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#intro-images img {
+    border-radius: 10px;
+    height: 200px;
+}
+
+#intro-images h2 {
+    font-size: 4em;
+}
+
+.idea-heading {
+    text-align: left;
+    font-size: 1.7em;
+    margin: 0 0 1em 2em;
+}
+
+.idea-description {
+    margin: 1em 6em 2em 4em;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.magazine-heading h1{
+    font-size: 2.5em;
+    text-align: center;
+    color: orange;
+}
+
+.magazine-cover {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.magazine-cover img {
+    height: 500px;
+    margin: 3em 5em;
+}
+
+.magazine-description {
+    text-align: justify;
+    margin-top: 3em;
+    margin-right: 5em;
+    font-size: 1.2em;
+    columns: 2;
+    column-gap: 4em;
+}
+
+.magazine-description p:nth-of-type(1)::first-letter {
+    font-size: 1.5em;
+}
+
+.student-heading h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: orange;
+}
+
+.student {
+    padding: 1em;
+}
+
+.student-description > p {
+    padding: 2em 4em 0 4em;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+#elections h1 {
+    margin: 1em;
+    text-align: center;
+}
+
+#elections p {
+    margin: 0 10em;
+    text-align: justify;
+    font-size: 1em;
+}
+
+#map {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#map img {
+    width: 600px;
+}
