@@ -9,18 +9,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.wrapper {
     background-image: url("intro/pics/dharkot-view.jpeg");
+    object-fit: cover;
     background-size: cover;
     background-attachment: fixed;
+    width: 1200px;
+    margin: 50px auto;
 }
 
 
-.wrapper {
-    width: 1200px;
-    margin: 50px auto;
-    background-color: rgba(255, 255, 255,0.6);
-    
+body {
+    background-color: rgba(255, 255, 255,0.6);  
 }
 
 /*   header starts here    */
